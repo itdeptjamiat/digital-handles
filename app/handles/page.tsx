@@ -98,6 +98,11 @@ const handles: HandleLink[] = [
         label: "App Store",
         href: "https://apps.apple.com/ie/app/echoreads/id6754093803",
       },
+      {
+        label: "LinkedIn",
+        href: "https://www.linkedin.com/company/echoreads/",
+      },
+
     ],
   },
   {
@@ -160,6 +165,47 @@ const handles: HandleLink[] = [
       },
     ],
   },
+  {
+    id: "imtbooks",
+    title: "Idara Matbuat e Talaba Lahore",
+    primaryLabel: "Open IMT Books",
+    primaryHref: "https://imtbooks.com.pk/",
+    iconSrc: "/handles/imtbooks.png",
+    accent: "from-[#021B79] to-[#0575E6]",
+    extraLinks: [
+      {
+        label: "Facebook",
+        href: "https://www.facebook.com/imtbooks/",
+      },
+    ],
+  },
+  {
+    id: "hamqadam",
+    title: "Monthly Hamqadam Lahore",
+    primaryLabel: "Open IMT Hamqadam",
+    primaryHref: "https://hamqadam.com.pk/",
+    iconSrc: "/handles/hamqadam.png",
+    accent: "from-[#021B79] to-[#0575E6]",
+    extraLinks: [
+      {
+        label: "Facebook",
+        href: "https://www.facebook.com/monthlyhamqadam/",
+      },
+      {
+        label: "Instagram",
+        href: "https://www.instagram.com/hamqadam_magazine/",
+      },
+    ],
+  },
+  {
+    id: "cerapa",
+    title: "Cerapa Pakistan",
+    primaryLabel: "Facebook",
+    primaryHref: "https://www.facebook.com/cerapa.pakistan",
+    iconSrc: "/handles/cerapa.jpg",
+    accent: "from-[#021B79] to-[#0575E6]",
+
+  },
 ];
 
 export default function HandlesPage() {
@@ -195,24 +241,6 @@ export default function HandlesPage() {
                 through the verified digital platforms curated below.
               </p>
             </div>
-          </div>
-          <div className="flex flex-col items-center gap-3 rounded-3xl bg-white/80 p-4 text-sm text-slate-600 shadow-lg shadow-[#0A4D8C]/10 backdrop-blur sm:items-end">
-            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#0A4D8C]">
-              Scan & Connect
-            </span>
-            <span className="rounded-2xl bg-slate-50 p-3 shadow-inner ring-1 ring-slate-100">
-              <Image
-                src="/handles/qrcode.png"
-                alt="Islami Jamiat-e-Talaba linkhub QR"
-                width={164}
-                height={164}
-                className="h-40 w-40 object-contain"
-                priority
-              />
-            </span>
-            <p className="max-w-[12rem] text-center text-xs leading-relaxed text-slate-500 sm:text-right">
-              Point your camera to explore the complete Linktree experience.
-            </p>
           </div>
         </header>
 
