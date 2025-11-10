@@ -9,6 +9,7 @@ type HandleLink = {
   primaryHref: string;
   iconSrc: string;
   accent: string;
+  buttonAccent?: string;
   description?: string;
   extraLinks?: Array<{ label: string; href: string }>;
 };
@@ -29,7 +30,8 @@ const handles: HandleLink[] = [
     primaryLabel: "Facebook",
     primaryHref: "https://www.facebook.com/JamiatPK",
     iconSrc: "/handles/facebook.avif",
-    accent: "from-[#005EB8] to-[#00B1A7]",
+    accent: "from-[#0A4D8C] to-[#2D9BF0]",
+    buttonAccent: "from-[#0A4D8C] to-[#36A2FF]",
   },
   {
     id: "instagram",
@@ -37,7 +39,8 @@ const handles: HandleLink[] = [
     primaryLabel: "@jamiatpk",
     primaryHref: "https://www.instagram.com/jamiatpk",
     iconSrc: "/handles/instagram.avif",
-    accent: "from-[#009245] to-[#2F80ED]",
+    accent: "from-[#F58529] to-[#DD2A7B]",
+    buttonAccent: "from-[#F58529] to-[#8134AF]",
   },
   {
     id: "whatsapp-hq",
@@ -45,7 +48,8 @@ const handles: HandleLink[] = [
     primaryLabel: "Message HQ",
     primaryHref: "https://wa.me/923349519657",
     iconSrc: "/handles/whatsapp.png",
-    accent: "from-[#25D366] to-[#007A33]",
+    accent: "from-[#128C7E] to-[#25D366]",
+    buttonAccent: "from-[#25D366] to-[#007A33]",
     description: "Official WhatsApp support line.",
   },
   {
@@ -54,7 +58,8 @@ const handles: HandleLink[] = [
     primaryLabel: "@jamiatpk",
     primaryHref: "https://www.tiktok.com/@jamiatpk",
     iconSrc: "/handles/tiktok.avif",
-    accent: "from-[#FF3F3F] to-[#000000]",
+    accent: "from-[#FF0050] to-[#00F2EA]",
+    buttonAccent: "from-[#FF3F81] to-[#00C6FF]",
   },
   {
     id: "website",
@@ -62,7 +67,7 @@ const handles: HandleLink[] = [
     primaryLabel: "jamiat.org.pk",
     primaryHref: "https://jamiat.org.pk/",
     iconSrc: "/handles/web.png",
-    accent: "from-[#1E88E5] to-[#43A047]",
+    accent: "from-[#0A4D8C] to-[#008751]",
     description: "Official website of Islami Jamiat-e-Talaba Pakistan.",
   },
   {
@@ -71,7 +76,7 @@ const handles: HandleLink[] = [
     primaryLabel: "@JamiatPK",
     primaryHref: "https://www.youtube.com/@JamiatPK",
     iconSrc: "/handles/youtube.avif",
-    accent: "from-[#FF0000] to-[#810000]",
+    accent: "from-[#FF0000] to-[#C21807]",
   },
   {
     id: "x",
@@ -79,7 +84,7 @@ const handles: HandleLink[] = [
     primaryLabel: "@JamiatPK",
     primaryHref: "https://x.com/JamiatPK",
     iconSrc: "/handles/x.png",
-    accent: "from-[#0F1419] to-[#4A5568]",
+    accent: "from-[#0F1419] to-[#38434F]",
   },
   {
     id: "echoreads",
@@ -87,7 +92,7 @@ const handles: HandleLink[] = [
     primaryLabel: "Open EchoReads",
     primaryHref: "https://echoreads.online/",
     iconSrc: "/handles/echoreads.png",
-    accent: "from-[#0066FF] to-[#00C6A2]",
+    accent: "from-[#FFA502] to-[#FFCE70]",
     description: "Digital reading companion by EchoReads.",
     extraLinks: [
       {
@@ -102,7 +107,6 @@ const handles: HandleLink[] = [
         label: "LinkedIn",
         href: "https://www.linkedin.com/company/echoreads/",
       },
-
     ],
   },
   {
@@ -111,7 +115,7 @@ const handles: HandleLink[] = [
     primaryLabel: "Open NEXT",
     primaryHref: "https://nextijt.com/",
     iconSrc: "/handles/next.jpeg",
-    accent: "from-[#0066FF] to-[#00C6A2]",
+    accent: "from-[#000000] to-[#FFFFFF]",
     description: "NEXT - Mapping the Future",
     extraLinks: [
       {
@@ -126,7 +130,6 @@ const handles: HandleLink[] = [
         label: "LinkedIn",
         href: "https://www.linkedin.com/company/next%E2%80%93mapping-the-future/",
       },
-
     ],
   },
   {
@@ -135,7 +138,7 @@ const handles: HandleLink[] = [
     primaryLabel: "Chat on WhatsApp",
     primaryHref: "https://wa.me/923086946851",
     iconSrc: "/handles/web.png",
-    accent: "from-[#1FA6FF] to-[#007A33]",
+    accent: "from-[#0A4D8C] to-[#00A86B]",
   },
   {
     id: "horizon",
@@ -143,7 +146,7 @@ const handles: HandleLink[] = [
     primaryLabel: "Facebook",
     primaryHref: "https://www.facebook.com/SaamaLhr/",
     iconSrc: "/handles/horizon.jpg",
-    accent: "from-[#004D40] to-[#81C784]",
+    accent: "from-[#FF7E03] to-[#ffffff]",
     extraLinks: [
       {
         label: "YouTube",
@@ -171,7 +174,7 @@ const handles: HandleLink[] = [
     primaryLabel: "Open IMT Books",
     primaryHref: "https://imtbooks.com.pk/",
     iconSrc: "/handles/imtbooks.png",
-    accent: "from-[#021B79] to-[#0575E6]",
+    accent: "from-[#94C41E] to-[#194F78]",
     extraLinks: [
       {
         label: "Facebook",
@@ -184,8 +187,8 @@ const handles: HandleLink[] = [
     title: "Monthly Hamqadam Lahore",
     primaryLabel: "Open IMT Hamqadam",
     primaryHref: "https://hamqadam.com.pk/",
-    iconSrc: "/handles/hamqadam.png",
-    accent: "from-[#021B79] to-[#0575E6]",
+    iconSrc: "/handles/hamqadam.jpg",
+    accent: "from-[#03AC9E] to-[#000000]",
     extraLinks: [
       {
         label: "Facebook",
@@ -198,13 +201,30 @@ const handles: HandleLink[] = [
     ],
   },
   {
+    id: "sama",
+    title: "SAMA - Syed Abul Ala Maududi Academy",
+    primaryLabel: "Open SAMA",
+    primaryHref: "https://samaijt.com/",
+    iconSrc: "/handles/sama.png",
+    accent: "from-[#154873] to-[#ff]",
+    extraLinks: [
+      {
+        label: "YouTube",
+        href: "https://www.youtube.com/@Horizon-n3x",
+      },
+      {
+        label: "Facebook",
+        href: "https://www.facebook.com/SaamaLhr/",
+      },
+    ],
+  },
+  {
     id: "cerapa",
     title: "Cerapa Pakistan",
     primaryLabel: "Facebook",
     primaryHref: "https://www.facebook.com/cerapa.pakistan",
     iconSrc: "/handles/cerapa.jpg",
-    accent: "from-[#021B79] to-[#0575E6]",
-
+    accent: "from-[#FF6B6B] to-[#C9184A]",
   },
 ];
 
@@ -219,13 +239,13 @@ export default function HandlesPage() {
 
       <div className="relative mx-auto flex min-h-screen w-full max-w-5xl flex-col px-4 pb-16 pt-12 sm:px-6 lg:px-10">
         <header className="flex flex-col items-center gap-6 text-center sm:flex-row sm:items-start sm:justify-between sm:text-left">
-          <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-center">
-            <span className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/80 shadow-lg ring-2 ring-[#0A4D8C]/20 backdrop-blur">
+          <div className="flex flex-col items-center gap-5 sm:flex-row sm:items-center">
+            <span className="flex h-20 w-20 items-center justify-center rounded-3xl bg-white/80 shadow-lg ring-2 ring-[#0A4D8C]/20 backdrop-blur">
               <Image
                 src="/handles/web.png"
                 alt="Jamiat Logo"
-                width={48}
-                height={48}
+                width={72}
+                height={72}
                 priority
               />
             </span>
@@ -256,12 +276,13 @@ export default function HandlesPage() {
                   aria-hidden="true"
                 />
                 <div className="flex items-center gap-4">
-                  <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100">
+                  <span className="flex h-14 w-14 items-center justify-center rounded-3xl bg-slate-100">
                     <Image
                       src={handle.iconSrc}
                       alt={`${handle.title} icon`}
-                      width={32}
-                      height={32}
+                      width={44}
+                      height={44}
+                      className="h-11 w-11 object-contain"
                     />
                   </span>
                   <div>
@@ -272,20 +293,18 @@ export default function HandlesPage() {
                   </div>
                 </div>
 
-                {handle.description ? (
+                {/* {handle.description ? (
                   <p className="mt-4 text-sm leading-relaxed text-slate-600">
                     {handle.description}
                   </p>
-                ) : null}
+                ) : null} */}
 
                 <div className="mt-6 flex flex-col gap-2">
                   <Link
                     href={handle.primaryHref}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`flex items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-white transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0A4D8C] ${getButtonGradient(
-                      handle.accent,
-                    )}`}
+                    className={`flex items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-white transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0A4D8C] bg-gradient-to-r ${handle.buttonAccent ?? handle.accent} hover:brightness-105`}
                   >
                     {handle.primaryLabel}
                     <span aria-hidden="true">↗</span>
@@ -331,18 +350,3 @@ export default function HandlesPage() {
     </div>
   );
 }
-
-function getButtonGradient(accent: string) {
-  const accentKey = accent.replace("from-", "").replace("to-", "");
-
-  if (accentKey.includes("#FF")) {
-    return "bg-gradient-to-r from-[#FF6B6B] to-[#C9184A] hover:brightness-105";
-  }
-
-  if (accentKey.includes("#00") || accentKey.includes("#25D366")) {
-    return "bg-gradient-to-r from-[#00C6A2] to-[#007A33] hover:brightness-105";
-  }
-
-  return "bg-gradient-to-r from-[#0A4D8C] to-[#0097B2] hover:brightness-105";
-}
-
