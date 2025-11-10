@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 import type { Metadata } from "next";
+
+import { ShareButton } from "@/components/share-button";
 
 type HandleLink = {
   id: string;
@@ -18,8 +21,41 @@ export const metadata: Metadata = {
   title: "Handles | Islami Jamiat-e-Talaba Pakistan",
   description:
     "Official social handles and digital platforms of Islami Jamiat-e-Talaba Pakistan.",
+  keywords: [
+    "Islami Jamiat-e-Talaba Pakistan",
+    "Jamiat social media",
+    "Jamiat digital handles",
+    "Islami student organization Pakistan",
+    "IJT contact",
+    "Jamiat official WhatsApp",
+    "Jamiat Linktree",
+  ],
+  metadataBase: new URL("https://handles.jamiat.org.pk"),
   alternates: {
-    canonical: "https://jamiat.org.pk/handles",
+    canonical: "https://handles.jamiat.org.pk/",
+  },
+  openGraph: {
+    title: "Islami Jamiat-e-Talaba Pakistan | Official Digital Handles",
+    description:
+      "Connect with Islami Jamiat-e-Talaba Pakistan across verified digital platforms including Facebook, Instagram, TikTok, YouTube, and more.",
+    url: "https://handles.jamiat.org.pk/",
+    siteName: "Islami Jamiat-e-Talaba Pakistan",
+    images: [
+      {
+        url: "https://handles.jamiat.org.pk/handles/web.png",
+        width: 512,
+        height: 512,
+        alt: "Islami Jamiat-e-Talaba Pakistan Logo",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Islami Jamiat-e-Talaba Pakistan | Official Digital Handles",
+    description:
+      "Discover and share the verified social and digital platforms of Islami Jamiat-e-Talaba Pakistan.",
+    images: ["https://handles.jamiat.org.pk/handles/web.png"],
   },
 };
 
@@ -206,7 +242,7 @@ const handles: HandleLink[] = [
     primaryLabel: "Open SAMA",
     primaryHref: "https://samaijt.com/",
     iconSrc: "/handles/sama.png",
-    accent: "from-[#154873] to-[#ff]",
+    accent: "from-[#154873] to-[#F0F6FF]",
     extraLinks: [
       {
         label: "YouTube",
@@ -228,41 +264,107 @@ const handles: HandleLink[] = [
   },
 ];
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      name: "Islami Jamiat-e-Talaba Pakistan",
+      alternateName: "Islami Jamiat Talaba",
+      url: "https://handles.jamiat.org.pk/",
+      logo: "https://handles.jamiat.org.pk/handles/web.png",
+      sameAs: [
+        "https://www.facebook.com/JamiatPK",
+        "https://www.instagram.com/jamiatpk",
+        "https://wa.me/923349519657",
+        "https://www.tiktok.com/@jamiatpk",
+        "https://jamiat.org.pk/",
+        "https://www.youtube.com/@JamiatPK",
+        "https://x.com/JamiatPK",
+        "https://echoreads.online/",
+        "https://play.google.com/store/apps/details?id=com.iqbal.echoreads",
+        "https://apps.apple.com/ie/app/echoreads/id6754093803",
+        "https://www.linkedin.com/company/echoreads/",
+        "https://nextijt.com/",
+        "https://www.facebook.com/SaamaLhr/",
+        "https://www.youtube.com/@Horizon-n3x",
+        "https://www.facebook.com/profile.php?id=61571076449277",
+        "https://imtbooks.com.pk/",
+        "https://hamqadam.com.pk/",
+        "https://samaijt.com/",
+        "https://www.facebook.com/cerapa.pakistan",
+      ],
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          contactType: "customer support",
+          telephone: "+92-334-9519657",
+          url: "https://wa.me/923349519657",
+        },
+      ],
+    },
+    {
+      "@type": "WebSite",
+      url: "https://handles.jamiat.org.pk/",
+      name: "Islami Jamiat-e-Talaba Pakistan Digital Handles",
+      description:
+        "Official directory of verified social media and digital platforms managed by Islami Jamiat-e-Talaba Pakistan.",
+      potentialAction: {
+        "@type": "SearchAction",
+        target: "https://www.google.com/search?q=Islami+Jamiat-e-Talaba+Pakistan+{search_term_string}",
+        "query-input": "required name=search_term_string",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "Islami Jamiat-e-Talaba Pakistan",
+        url: "https://jamiat.org.pk/",
+      },
+    },
+  ],
+};
+
 export default function HandlesPage() {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-[#E6F3FF] via-[#F5F9F6] to-[#FFEFEF] text-slate-900">
-      <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute -top-32 -left-32 h-64 w-64 rounded-full bg-gradient-to-br from-[#0A4D8C]/20 to-transparent blur-3xl" />
-        <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-gradient-to-tr from-[#008751]/20 to-transparent blur-3xl" />
-        <div className="absolute top-1/2 right-1/4 h-40 w-40 -translate-y-1/2 rounded-full bg-gradient-to-br from-[#FF4E50]/20 to-transparent blur-3xl" />
-      </div>
+    <>
+      <Script id="handles-schema" type="application/ld+json">
+        {JSON.stringify(structuredData)}
+      </Script>
+      <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-[#E6F3FF] via-[#F5F9F6] to-[#FFEFEF] text-slate-900">
+        <div className="pointer-events-none absolute inset-0 overflow-hidden">
+          <div className="absolute -top-32 -left-32 h-64 w-64 rounded-full bg-gradient-to-br from-[#0A4D8C]/20 to-transparent blur-3xl" />
+          <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-gradient-to-tr from-[#008751]/20 to-transparent blur-3xl" />
+          <div className="absolute top-1/2 right-1/4 h-40 w-40 -translate-y-1/2 rounded-full bg-gradient-to-br from-[#FF4E50]/20 to-transparent blur-3xl" />
+        </div>
 
-      <div className="relative mx-auto flex min-h-screen w-full max-w-5xl flex-col px-4 pb-16 pt-12 sm:px-6 lg:px-10">
-        <header className="flex flex-col items-center gap-6 text-center sm:flex-row sm:items-start sm:justify-between sm:text-left">
-          <div className="flex flex-col items-center gap-5 sm:flex-row sm:items-center">
-            <span className="flex h-20 w-20 items-center justify-center rounded-3xl bg-white/80 shadow-lg ring-2 ring-[#0A4D8C]/20 backdrop-blur">
-              <Image
-                src="/handles/web.png"
-                alt="Jamiat Logo"
-                width={72}
-                height={72}
-                priority
-              />
-            </span>
-            <div className="space-y-2">
-              <p className="text-xs font-semibold uppercase tracking-[0.4em] text-[#0A4D8C]">
-                Islami Jamiat-e-Talaba Pakistan
-              </p>
-              <h1 className="text-3xl font-bold leading-tight text-slate-950 sm:text-4xl">
-                Official Digital Handles
-              </h1>
-              <p className="max-w-2xl text-sm leading-relaxed text-slate-600 sm:text-base">
-                Stay connected with our mission, initiatives, and community
-                through the verified digital platforms curated below.
-              </p>
+        <div className="relative mx-auto flex min-h-screen w-full max-w-5xl flex-col px-4 pb-16 pt-12 sm:px-6 lg:px-10">
+          <header className="flex flex-col items-center gap-6 text-center sm:flex-row sm:items-start sm:justify-between sm:text-left">
+            <div className="flex flex-col items-center gap-5 sm:flex-row sm:items-center">
+              <span className="flex h-20 w-20 items-center justify-center rounded-3xl bg-white/80 shadow-lg ring-2 ring-[#0A4D8C]/20 backdrop-blur">
+                <Image
+                  src="/handles/web.png"
+                  alt="Jamiat Logo"
+                  width={72}
+                  height={72}
+                  priority
+                />
+              </span>
+              <div className="space-y-2">
+                <p className="text-xs font-semibold uppercase tracking-[0.4em] text-[#0A4D8C]">
+                  Islami Jamiat-e-Talaba Pakistan
+                </p>
+                <h1 className="text-3xl font-bold leading-tight text-slate-950 sm:text-4xl">
+                  Official Digital Handles
+                </h1>
+                <p className="max-w-2xl text-sm leading-relaxed text-slate-600 sm:text-base">
+                  Stay connected with our mission, initiatives, and community
+                  through the verified digital platforms curated below.
+                </p>
+              </div>
             </div>
-          </div>
-        </header>
+            <div className="flex w-full justify-center sm:w-auto sm:justify-end">
+              <ShareButton />
+            </div>
+          </header>
 
         <main className="mt-10 flex-1">
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -348,5 +450,6 @@ export default function HandlesPage() {
         </footer>
       </div>
     </div>
+    </>
   );
 }
