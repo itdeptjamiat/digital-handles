@@ -101,6 +101,30 @@ const handles: HandleLink[] = [
     ],
   },
   {
+    id: "next",
+    title: "NEXT - Nurture | Excel | Transform",
+    primaryLabel: "Open NEXT",
+    primaryHref: "https://nextijt.com/",
+    iconSrc: "/handles/next.jpeg",
+    accent: "from-[#0066FF] to-[#00C6A2]",
+    description: "NEXT - Mapping the Future",
+    extraLinks: [
+      {
+        label: "Facebook",
+        href: "https://www.facebook.com/people/NEXT-Mapping-the-Future/61571336774341/",
+      },
+      {
+        label: "Instagram",
+        href: "https://www.instagram.com/next_mappingthefuture/",
+      },
+      {
+        label: "LinkedIn",
+        href: "https://www.linkedin.com/company/next%E2%80%93mapping-the-future/",
+      },
+
+    ],
+  },
+  {
     id: "whatsapp-gpt",
     title: "WhatsApp Jamiat ChatBot (JamiatGPT)",
     primaryLabel: "Chat on WhatsApp",
