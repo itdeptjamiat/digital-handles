@@ -193,6 +193,10 @@ const handles: HandleLink[] = [
         label: "LinkedIn",
         href: "https://www.linkedin.com/company/next%E2%80%93mapping-the-future/",
       },
+      {
+        label: "YouTube",
+        href: "https://www.youtube.com/@next-z7i",
+      }
     ],
   },
   {
