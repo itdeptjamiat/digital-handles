@@ -247,6 +247,11 @@ const handles: HandleLink[] = [
         label: "Facebook",
         href: "https://www.facebook.com/imtbooks/",
       },
+      {
+        label: "Instagram",
+        href: "https://www.instagram.com/imtbooks/",
+      },
+
     ],
   },
   {
@@ -286,8 +291,8 @@ const handles: HandleLink[] = [
     ],
   },
   {
-    id: "cerapa",
-    title: "Cerapa Pakistan",
+    id: "CERAPA",
+    title: "CERAPA Pakistan",
     primaryLabel: "Facebook",
     primaryHref: "https://www.facebook.com/cerapa.pakistan",
     iconSrc: "/handles/cerapa.jpg",
