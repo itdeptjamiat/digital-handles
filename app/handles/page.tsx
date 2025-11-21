@@ -153,6 +153,14 @@ const handles: HandleLink[] = [
     ],
   },
   {
+    id: "donate-now",
+    title: "Support the Mission of Islami Jamiat-e-Talaba Pakistan through Donation",
+    primaryLabel: "Open Donation Page",
+    primaryHref: "https://jamiat.org.pk/donate/",
+    iconSrc: "/handles/web.png",
+    accent: "from-[#36A2FF] to-[#0A4D8C]",
+  },
+  {
     id: "next",
     title: "NEXT - Nurture | Excel | Transform",
     primaryLabel: "Open NEXT",
@@ -472,7 +480,7 @@ export default function HandlesPage() {
               ))}
             </div>
           </main>
-          <section className="mt-12 rounded-3xl bg-white/90 p-6 shadow-lg shadow-slate-900/5 ring-1 ring-white/60 backdrop-blur">
+          {/* <section className="mt-12 rounded-3xl bg-white/90 p-6 shadow-lg shadow-slate-900/5 ring-1 ring-white/60 backdrop-blur">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.35em] text-[#0A4D8C]">
@@ -521,7 +529,7 @@ export default function HandlesPage() {
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
           <footer className="mt-12 flex flex-col items-center justify-between gap-4 text-center text-xs text-slate-500 sm:flex-row sm:text-left">
             <p>
               Updated: November 10, 2025 · For media or press inquiries, visit{" "}
