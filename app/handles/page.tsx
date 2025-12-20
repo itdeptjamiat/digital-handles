@@ -153,14 +153,6 @@ const handles: HandleLink[] = [
     ],
   },
   {
-    id: "donate-now",
-    title: "Support the Mission of Islami Jamiat-e-Talaba Pakistan through Donation",
-    primaryLabel: "Open Donation Page",
-    primaryHref: "https://jamiat.org.pk/donate/",
-    iconSrc: "/handles/web.png",
-    accent: "from-[#36A2FF] to-[#0A4D8C]",
-  },
-  {
     id: "next",
     title: "NEXT - Nurture | Excel | Transform",
     primaryLabel: "Open NEXT",
@@ -186,14 +178,6 @@ const handles: HandleLink[] = [
         href: "https://www.youtube.com/@next-z7i",
       },
     ],
-  },
-  {
-    id: "whatsapp-gpt",
-    title: "WhatsApp Jamiat ChatBot (JamiatGPT)",
-    primaryLabel: "Chat on WhatsApp",
-    primaryHref: "https://wa.me/923086946851",
-    iconSrc: "/handles/web.png",
-    accent: "from-[#0A4D8C] to-[#00A86B]",
   },
   {
     id: "horizon",
@@ -316,6 +300,14 @@ const handles: HandleLink[] = [
     primaryHref: "https://www.facebook.com/cerapa.pakistan",
     iconSrc: "/handles/cerapa.jpg",
     accent: "from-[#FF6B6B] to-[#C9184A]",
+  },
+  {
+    id: "donate-now",
+    title: "Support the Mission of Islami Jamiat-e-Talaba Pakistan through Donation",
+    primaryLabel: "Open Donation Page",
+    primaryHref: "https://jamiat.org.pk/donate/",
+    iconSrc: "/handles/web.png",
+    accent: "from-[#36A2FF] to-[#0A4D8C]",
   },
 ];
 
