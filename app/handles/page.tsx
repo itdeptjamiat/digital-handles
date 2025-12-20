@@ -302,6 +302,14 @@ const handles: HandleLink[] = [
     accent: "from-[#FF6B6B] to-[#C9184A]",
   },
   {
+    id: "it",
+    title: "Information Technology Department",
+    primaryLabel: "Open IT Dept Info on GitHub",
+    primaryHref: "https://github.com/itdeptjamiat",
+    iconSrc: "/handles/github.svg",
+    accent: "from-[#333333] to-[#6e5494]", // colors based on GitHub icon (dark gray to octocat purple)
+  },
+  {
     id: "donate-now",
     title: "Support the Mission of Islami Jamiat-e-Talaba Pakistan through Donation",
     primaryLabel: "Open Donation Page",
