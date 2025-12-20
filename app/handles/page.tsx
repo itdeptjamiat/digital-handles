@@ -295,8 +295,8 @@ const handles: HandleLink[] = [
   },
   {
     id: "cerapa",
-    title: "Cerapa Pakistan",
-    primaryLabel: "Facebook",
+    title: "CERAPA Pakistan",
+    primaryLabel: "Open CERAPA Pakistan",
     primaryHref: "https://www.facebook.com/cerapa.pakistan",
     iconSrc: "/handles/cerapa.jpg",
     accent: "from-[#FF6B6B] to-[#C9184A]",
