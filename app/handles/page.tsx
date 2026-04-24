@@ -76,6 +76,20 @@ const handles: HandleLink[] = [
       { label: "𝐗 (𝐅𝐨𝐫𝐦𝐞𝐫 𝐓𝐰𝐢𝐭𝐭𝐞𝐫)", href: "https://x.com/JamiatPK" },
     ],
   },
+  {
+    id: "nazim-e-ala",
+    title: "Sahibzada Wasim Haider",
+    primaryLabel: "President Islami Jamiat-e-Talaba Pakistan",
+    primaryHref: "https://wa.me/923065945719/",
+    iconSrc: "/handles/nazim.png",
+    accent: "from-[#0A4D8C] to-[#2D9BF0]",
+    buttonAccent: "from-[#0A4D8C] to-[#36A2FF]",
+    extraLinks: [
+      { label: "Facebook", href: "https://www.facebook.com/people/Sahibzda-Wasim-Haider/61555614602960/" },
+      { label: "𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦", href: "https://www.instagram.com/wasim.haider" },
+      { label: "𝐗 (𝐅𝐨𝐫𝐦𝐞𝐫 𝐓𝐰𝐢𝐭𝐭𝐞𝐫)", href: "https://x.com/sahibzadawasim" },
+    ],
+  },
   // {
   //   id: "instagram",
   //   title: "𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦",
